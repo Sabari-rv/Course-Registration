@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+        <style>
+            
+            html,body{
+              height: 100%;
+              margin: 0;
+            }
+
+            .bg {
+              background-image: url("https://img.freepik.com/free-vector/blue-curve-frame-template_53876-114600.jpg?w=900&t=st=1663185593~exp=1663186193~hmac=d98f4281a83585b2766e1362f53436ae4c7d54f7d4d21f29f36a7d000915180d");
+              height: 100%; 
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            .input{
+                padding: 20px;
+                margin: 20px;
+            }
+            table, th, td 
+            {
+                border:1px solid black;
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="bg">
+            <center>
+                <h1>STUDENT REGISTRATION PORTAL</h1>
+                <h2>WINTER SEMESTER (2022-23)</h2>
+            </center>
+            <div class="input">
+                <form action="calc1.jsp" method ="post">
+                    <h3>Enter Registration Number:</h3>
+                    <input type="text" name="sid" placeholder="Register number" required>
+                    <h3>Enter Name:</h3>
+                    <input type="text" name="sname" placeholder="Student Name" required><br>
+                    <h3>Select courses: Minimum(16 credits), Maximum(26 credits)</h3>
+                    <table>
+                        <tr>
+                            <th>Courses</th>
+                            <th>Credits</th>
+                            <th>Choose</th>
+                        </tr>
+                        <tr>
+                            <td>Principles of Compiler Design</td>
+                            <td>3</td>
+                            <td><input type="checkbox" name="CSI2005" value="Principles of Compiler Design" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Programming in Java</td>
+                            <td>4</td>
+                            <td><input type="checkbox" name="CSI2008" value="Programming in Java" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Computing</td>
+                            <td>3</td>
+                            <td><input type="checkbox" name="CSI3001" value="Cloud Computing" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Applied Cryptography and Network Security</td>
+                            <td>4</td>
+                            <td><input type="checkbox" name="CSI3002" value="Applied Cryptography and Network Security" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Java</td>
+                            <td>3</td>
+                            <td><input type="checkbox" name="CSI3018" value="Advanced Java" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cyber Security</td>
+                            <td>4</td>
+                            <td><input type="checkbox" name="CSI3022" value="Cyber Security" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Foundation of English</td>
+                            <td>2</td>
+                            <td><input type="checkbox" name="ENG1000" value="Foundation of English" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Espanol Fundamentals</td>
+                            <td>2</td>
+                            <td><input type="checkbox" name="ESP1001" value="Espanol Fundamentals" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Psychology in Everyday Life</td>
+                            <td>3</td>
+                            <td><input type="checkbox" name="HUM1022" value="Psychology in everyday life" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Predictive Analytics</td>
+                            <td>4</td>
+                            <td><input type="checkbox" name="MDI3003" value="Predictive Analytics" />
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Admin Login</title>
+        <style>
+            html,body
+            {
+              height: 100%;
+              margin: 0;
+            }
+
+            .bg {
+              background-image: url("https://img.freepik.com/free-vector/blue-curve-frame-template_53876-114600.jpg?w=900&t=st=1663185593~exp=1663186193~hmac=d98f4281a83585b2766e1362f53436ae4c7d54f7d4d21f29f36a7d000915180d");
+              height: 100%; 
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="bg">
+       
+        <center>
+            <h1>Admin Login Page</h1>
+            <form action="adminjsp.jsp" method="post">
+                <h3>Enter Username</h3>
+                <input type="text" name="adminname">
+                <h3>Enter Password</h3>
+                <input type="password" name="adminpass"><br><br>
+                <input type="submit" value="login">
+            </form>
+        </center>
+        
+    </body>
+</html>
